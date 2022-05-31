@@ -1,23 +1,196 @@
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
-    <script defer src="script.js"></script>
-    
+    <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Bienvenido a tu esparcimiento!</title>
+    <meta name="description" content= "Un hotel pensado para que te distiendas y disfrutes al máximo de Cafayate, sintiendote como en tu casa">
+    <meta name="keywords" content="hotel, cafayate, esparcimiento, aventura, descanso, familia, ruta, habitación, superior, estándard, pileta, parrilla, casa, patio cervecero, terraza, vino, vino de altura, viñedos, malbec, torrontés, turismo, turista, atención, comodidad, estacionamiento, gimnasio, reservas, disponibilidad">
+    <link rel="icon" type="favicon" href="img/icons/favicon.svg">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4Y1ZZXZJT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
+            gtag('config', 'G-W4Y1ZZXZJT');
+        </script>    
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TG8XCPP');</script>
+        <!-- End Google Tag Manager -->
+        <script defer src="js/main.js"></script>
+        <script defer src="js/view/view.js"></script>
+        <script defer src="js/class/class.js"></script>
+        
 </head>
-<body>
-    <main>
-        <h1>Progreso de la reserva</h1>
+<body class="text-center">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG8XCPP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-dark navColor w-100 wow animate__animated animate__fadeInDown">
+        <div class="navContainer container-fluid">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservascon.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cafayate.html">Descubre Cafayate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ends Navbar -->
+    <!-- Main Contet -->
+    <main class="mx-auto">
+        <!-- Carousel -->
+        <div id="indexCarousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/entradadiacar.jpg" class="d-block w-100" alt="Imagen Frente del Hotel Los Toneles - Cafayate">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/terrazacar.jpg" class="d-block w-100" alt="Terraza Hotel Los Toneles - Cafayate">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/entradanochecar.jpg" class="d-block w-100" alt="Imagen patio cervecero y entrada de noche del Hotel Los Toneles - Cafayate">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#indexCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#indexCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Ends Carousel -->
+        <!-- Availability Form -->
+        <div class="availForm py-2 wow animate__animated animate__fadeInUp">
+            <div class="container w-100">
+                <div class="row">
+                    <div class="dateInput col-xs-12 col-xl-4">
+                        <label for="date" class="dateLbl">Ingreso: </label>
+                        <input type="text" name="date" id="date" class="indexDateInput">
+                    </div>
+                    <div class="col-xs-12 col-xl-4">
+                        <label for="night" class="dateLbl">Noches: </label>
+                        <input type="text" name="night" id="night"> 
+                    </div>
+                    <div class="col-xs-12 col-xl-4">
+                        <label for="room" class="dateLbl">Habitaciones: </label>
+                        <input type="text" name="room" id="room"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-xs-12">
+                        <label for="adult" class="dateLbl">Adultos: </label>
+                        <input type="text" name="adult" id="adult">
+                    </div>
+                    <div class="col-xl-4 col-xs-12">
+                        <label for="kid" class="dateLbl">Niños: </label>
+                        <label for="kid" class="dateLbl">(menores de 12 años)</label>
+                        <input type="text" name="kid" id="kid">
+                    </div>
+                    <div class="m-0 p-0 col-xl-4 col-xs-12 btn ">
+                        <button id="availFormBtn" type="submit" class="button btnDark">
+                            <span>¡Verifica la Disponibilidad!</span>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!--Section Data  -->
+        <h1 class="cardTitle">Verifica los datos <span>de Disponibilidad</span></h1>
         <div id="miReserva">
-
             
         </div>
+            <button id="toReserveBtn" type="submit" class="button btnDark mx-auto my-1">
+                <span>¡Reservar!</span>
+            </button>
+        <div id="availableRooms">
 
-
-    </main>    
+        </div>
+    </main> 
+    <!-- Aside -->
+    <aside>
+        <div class="w-100 asideGrid wow animate__animated animate__fadeInUp">
+            <h3 class="asideTitle" id="asideTitle">También nos podes encontrar en: </h3>
+            <div id="trip" class="asideFigures">
+                <figure>
+                    <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="img/icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
+                    <figcaption class="asideFigCap">Trip Advisor</figcaption>
+                </figure>
+            </div>
+            <div id="booking" class="asideFigures">
+                    <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="img/icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
+                    <figcaption class="asideFigCap">Booking</figcaption>
+                </figure>
+            </div>
+            <div class="asideFigures" id="cafayate">
+                <figure>
+                    <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="img/icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
+                    <figcaption class="asideFigCap">Actividades</figcaption>
+                </figure>
+            </div>
+        </div>
+    </aside>
+    <!-- End Aside -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footerFlex w-100 wow animate__animated animate__fadeInUp">
+            <div class="pDiv">
+                <p>Seguinos en nuestras redes sociales:</p>
+            </div>
+            <div class="iconDiv">
+                <a href="https://www.facebook.com/" target="blank" class="footerIcon"><img src="img/icons/facebookLight.svg" alt="Facebook" class="iconFooter"></a>
+                <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="img/icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+                <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="img/icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+            </div>  
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scrtipt js bootsrap -->
+    <script src="js/frameworks/bootstrap.min.js"></script>
+    <!-- WOW script -->
+    <script src="js/frameworks/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
